@@ -1238,7 +1238,8 @@ App={
         else if(App.network=="rinkeby") App.contracts.dwitter = new web3.eth.Contract(abi, App.Rinkeby);
         else if(App.network=="ropsten") App.contracts.dwitter = new web3.eth.Contract(abi, App.Ropsten);
         else if(App.network=="goerli") App.contracts.dwitter = new web3.eth.Contract(abi, App.Goerli);
-        else App.showError("Please Connect to valid network");
+        else if(App.network=="sepolia") App.contracts.dwitter = new web3.eth.Contract(abi, App.Sepolia);
+        else App.showError("");
         console.log(App.contracts.dwitter);
       },
 

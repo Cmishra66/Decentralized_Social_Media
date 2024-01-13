@@ -24,7 +24,8 @@
   "homepage": "https://github.com/mbcse/Decentralized_Social_Media#readme",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.2.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
+    "js": "^0.1.0",
     "lite-server": "^2.6.1"
   }
 }

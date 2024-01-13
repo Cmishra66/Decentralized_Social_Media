@@ -49,7 +49,7 @@ module.exports = {
     development: {
      host: "127.0.0.1",     // Localhost (default: none)
      port: 8545,            // Standard Ethereum port (default: none)
-     network_id: "*",       // Any network (default: none)
+     network_id: "11155111",       // Any network (default: none)
     },
     rinkeby: {
       provider: () => new HDWalletProvider(mnemonic, rinkeybyinfuraURL),
@@ -76,14 +76,14 @@ module.exports = {
       skipDryRun: true,
     },
     // Another network with more advanced options...
-    // advanced: {
-    // port: 8777,             // Custom port
-    // network_id: 1342,       // Custom network
-    // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
-    // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
-    // from: <address>,        // Account to send txs from (default: accounts[0])
-    // websockets: true        // Enable EventEmitter interface for web3 (default: false)
-    // },
+     goerli: {
+     port: 8777,             // Custom port
+     network_id:  5,       // Custom network
+     gas: 6721975,           // Gas sent with each transaction (default: ~6700000)
+     gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
+    from: 0x7A7B510C1d1D4e194aeb0Eb3B904AF07e3BA46e9,        // Account to send txs from (default: accounts[0])
+     websockets: true        // Enable EventEmitter interface for web3 (default: false)
+     },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     // ropsten: {
